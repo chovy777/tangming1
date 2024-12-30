@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>汇智知了堂</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .top{
+      overflow: hidden;
+      width: 100%;
+      height: 90px;
+      position: fixed;
+      background-color: white;
+      z-index: 999;
+    }
+    .logo{
+      margin-top: 26px;
+      height: 37px;
+      width: 150px;
+      float: left;
+      background-image: url("img/logo.png");
+      background-size: 100% 100%;
+    }
+    .li{
+      display: inline-block;
+      width: 75px;
+      height: 20px;
+      margin-top: 55px;
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      color: #434343;
+      font-size: 14px;
+    }
+    .one{
+      margin-right: -13px;
+      text-align: center;
+      display: inline-block;
+      width: 75px;
+      height: 20px;
+      margin-top: 55px;
+      list-style: none;
+    }
+    .tu{
+      width: 135px;
+      height: 35px;
+      position: relative;
+      float: right;
+      top: -70px;
+      right: 70px;
+    }
+    .p{
+      width: 135px;
+      height: 25px;
+      position: relative;
+      float: right;
+      top: -30px;
+      right: -70px;
+    }
+    .jj{
+      margin-right: -10px;
+      display: inline-block;
+      width: 75px;
+      height: 20px;
+      margin-top: 55px;
+      list-style: none;
+    }
+    .body{
+      width: 100%;
+      height: 2000px;
+    }
+    .tou{
+      position: relative;
+      top: 90px;
+      width: 100%;
+      height: 337px;
+      background-size: 100% 100%;
+      background-image: url("img/244a4160d13ee73.jpg");
+    }
+    .n{
+      width:100%;
+      height: 525px;
+      background-color: #f5f4fc;
+    }
+    .hq{
+      position: relative;
+      top: 160px;
+      padding-left: 75px;
+    }
+    .float{
+      width: 375px;
+      height: 210px;
+      background-image: url("img/zy.jpg");
+      background-size: 100% 100%;
+      float: left;
+      margin-top: 210px;
+      margin-left: 75px;
+    }
+    .pp{
+      display: inline-block;
+      width: 700px;
+      position: relative;
+      top: 210px;
+      left: 50px;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 5px;
+      color: grey;
+    }
+    .jd{
+      width: 100%;
+      height: 1200px;
+    }
+    .hw{
+      padding-left: 75px;
+      position: relative;
+      top: 70px;
+    }
+    .img{
+      position: relative;
+      top: 40px;
+      left: 75px;
+    }
+    .se{
+      margin-left: 75px;
+      margin-top: 90px;
+      width: 250px;
+      height: 37px;
+      background-image: linear-gradient(90deg, #2677f8, #4220e8) ;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+    }
+    .img1{
+      width: 50px;
+      height: 48px;
+      background-size: 100% 100%;
+      position: relative;
+      top: -43px;
+      left: 325px;
+    }
+    .img2{
+      height: 48px;
+      position: relative;
+      top: -43px;
+      left: 350px;
+    }
+    .p1{
+      margin-left: 75px;
+      color: grey;
+    }
+    .xy{
+      width: 100%;
+      height: 620px;
+      background-color: #264bdb;
+    }
+    .he{
+      padding-left: 75px;
+      position: relative;
+      top: 70px;
+      color: white;
+    }
+    .su{
+      width: 1000px;
+      height: 170px;
+      background-color: #daeff8;
+      margin: 80px auto;
+      border-radius: 10px;
+    }
+    .bai{
+      width: 650px;
+      height: 170px;
+      float: right;
+      background-color: white;
+      border-radius: 0 10px 10px 0;
+    }
+    .img3{
+      float: left;
+      padding-top: 30px;
+      padding-left: 50px;
+    }
+    .fud{
+      float: left;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+    .table{
+      margin-top: 20px;
+    }
+    .fud1{
+      float: left;
+      margin-top: 85px;
+      margin-left: -60px;
+      color: grey;
+    }
+    .td1{
+      display: inline-block;
+      width: 130px;
+      height: 30px;
+      margin-left: 50px;
+    }
+    .td2{
+      display: inline-block;
+      color: grey;
+      height: 30px;
+    }
+    .xiaoyuan{
+      width: 100%;
+      height: 800px;
+    }
+    .table1{
+      margin-top: 130px;
+      margin-left: 30%;
+    }
+    .table1 td{
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      text-align: center;
+    }
+    .yc{
+      font-size: 24px;
+      cursor: pointer;
+      color: dodgerblue;
+    }
+    .yc1{
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .yc:hover{
+      color: dodgerblue;
+      transform: translateY(-1px);
+    }
+    .yc1:hover{
+      color: dodgerblue;
+      transform: translateY(-1px);
+    }
+    .over{
+      margin: 0 auto;
+      width: 1100px;
+      height: 500px;
+      overflow: hidden;
+      display: block;
+    }
+    .over1{
+      margin: 0 auto;
+      width: 1100px;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+      display: none;
+    }
+    .xiao{
+      width: 200px;
+      height: 150px;
+      background-size: 100%;
+      border-radius: 5px;
+    }
+    .left{
+      width: 200px;
+      height: 200px;
+      float: left;
+      text-align: center;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .jishuganhuo{
+      width: 100%;
+      height: 700px;
+    }
+    .center{
+      margin-left: 50px;
+      overflow: hidden;
+    }
+    .zuo{
+      width: 350px;
+      height: 470px;
+      float: left;
+      margin-top: 110px;
+      border: 1px solid dodgerblue;
+      border-radius: 8px;
+    }
+    .zhong{
+      width: 350px;
+      height: 470px;
+      float: left;
+      margin-top: 110px;
+      margin-left:30px;
+      border: 1px solid dodgerblue;
+      border-radius: 8px;
+    }
+    .you{
+      width: 350px;
+      height: 470px;
+      float: left;
+      margin-top: 110px;
+      margin-left: 30px;
+      border: 1px solid dodgerblue;
+      border-radius: 8px;
+    }
+    .span{
+      width: 210px;
+      height: 40px;
+      margin-left: 28px;
+      margin-top: 30px;
+      display: inline-block;
+      font-size: 20px;
+      text-align: left;
+    }
+    .span1{
+      width: 50px;
+      height: 40px;
+      display: inline-block;
+      font-size: 18px;
+      margin-left: 37px;
+      cursor: pointer;
+    }
+    .img0{
+      margin-left: 28px;
+    }
+    .li1{
+      width: 294px;
+      list-style-position: inside;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-left: 28px;
+      margin-top: 10px;
+    }
+    a:hover{
+
+      color: #4f7cf5;
+    }
+    .li1::marker{
+      color: #9fcffd;
+    }
+    .news{
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+    }
+    .img4{
+      width: 400px;
+      height: 300px;
+      float: left;
+      margin-left: 75px;
+      margin-top: 130px;
+    }
+    .span2{
+      display: inline-block;
+      width: 400px;
+      height: 50px;
+      text-align: center;
+      list-style-position: inside;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: rgba(244, 233, 233, 0.1);
+      color: #ffffff;
+      font-size: 20px;
+      position: relative;
+      top: 400px;
+      left:-400px;
+    }
+    .hm{
+      width: 200px;
+      height: 300px;
+      float: left;
+     position: relative;
+      top: 100px;
+      left: 20px;
+    }
+    .img5{
+      width: 200px;
+      height: 72px;
+      background-size: cover;
+      border-radius: 10px;
+      margin-top: -28px;
+    }
+    .span3{
+      display: inline-block;
+      width: 170px;
+      height: 24px;
+      list-style-position: inside;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      top: -28px;
+      padding-left: 30px;
+      color: #fbfbfb;
+      background-color: rgba(253, 253, 253,0.3);
+    }
+    .span4{
+      display: inline-block;
+      height: 23px;
+      width: 25px;
+      text-align: center;
+      background-color: red;
+      margin-left: -30px;
+      margin-right: 10px;
+      border-radius: 0 10px 0 10px;
+    }
+    .span5{
+      display: inline-block;
+      font-size: 20px;
+      position: relative;
+      left: 50px;
+      top: 70px;
+      cursor: pointer;
+    }
+    .span6{
+      font-size: 16px;
+      margin-left: 300px;
+      cursor: pointer;
+    }
+    .remen{
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      background-color: #264bdb;
+    }
+    .table2{
+      margin: 0 auto;
+      position: relative;
+      top: 76px;
+    }
+    .td3{
+      display: inline-block;
+      width: 220px;
+      height: 100px;
+      margin-right: 30px;
+      margin-top: 50px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    .img6{
+      margin-left: 30px;
+      margin-top: 20px;
+      width: 50px;
+      height: 50px;
+    }
+    .span7{
+      display: inline-block;
+      position: relative;
+      top: -18px;
+      left: 5px;
+      font-size: 20px;
+    }
+    .foot{
+      width: 100%;
+      height: 450px;
+      background-color: #1a3062;
+    }
+    .img7{
+      position: relative;
+      top: 50px;
+      left: 75px;
+      width: 240px;
+      height: 60px;
+    }
+    .table3{
+      color: white;
+      margin-left: 28%;
+    }
+    .p2{
+      margin-top: 20px;
+      padding-left: 28%;
+      color: white;
+
+    }
+    .p3{
+      padding-left: 30.5%;
+      color: white;
+
+      font-size: 12px;
+    }
+    .center1{
+      margin-right: 22%;
+      text-align: center;
+    }
+    .ul{
+      width: 130px;
+      position: fixed;
+      list-style: none;
+      border-radius: 5px;
+      text-align: left;
+      line-height: 30px;
+      background-color: rgba(107, 124, 245,0.4);
+      display: none;
+    }
+    .ul li{
+      display: inline-block;
+      width: 120px;
+      padding-left: 10px;
+    }
+    .li:hover .ul{
+      display: block;
+    }
+    .ul li:hover{
+      border-radius: 5px;
+      background-color: rgb(103, 149, 221);
+    }
+    .ul li a{
+      color: white;
+    }
+    .img8{
+      position: fixed;
+      top: 130px;
+      left: 5px;
+      z-index: 100;
+      width: 100px;
+      height: 150px;
+    }
+    .neibu{
+      position: fixed;
+      top: 225px;
+      left: 5px;
+      width: 100px;
+      height: 370px;
+      background-color: #2878fd;
+      border-radius: 8px;
+      z-index: 101;
+    }
+    .neibu1{
+      margin: 10px auto;
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      background-color: white;
+      cursor: pointer;
+    }
+    .img9{
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 18px;
+    }
+    .neibu1 div{
+      margin-left: 8px;
+    }
+    .jie{
+      position: fixed;
+      width: 320px;
+      height: 50px;
+      right: 20px;
+      bottom: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 200;
+    }
+    .left1{
+      margin-left: 4.5%;
+    }
+    .td4{
+      line-height: 70px;
+    }
+    .dj{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<script>
+  const img=document.querySelector('.jie');
+  let x1=0;
+  let y1=0;
+  let x2=0;
+  let y2=0;
+  img.addEventListener('touchstart',function(e){
+    x1=img.offsetLeft;
+    y1=img.offsetTop;
+    x2=e.touches[5].pageX;
+    y2=e.touches[5].pageY;
+  })
+  img.addEventListener('touchmove',function(e){
+    let x3=e.touches[5].pageX;
+    let y3=e.touches[5].pageY;
+    img.style.left=x3-x2+x1+'px';
+    img.style.top=y3-y2+y1+'px';
+  })
+</script>
+<img src="img/jie.png" alt="" class="jie" draggable="true">
+  <img src="img/img_40.png" alt="" class="img8">
+  <div class="neibu">
+    <div class="neibu1">
+      <img src="img/img_41.png" alt="" class="img9">
+      <div>热门课程</div>
+    </div>
+    <div class="neibu1">
+      <img src="img/img_42.png" alt="" class="img9">
+      <div>免费试听</div>
+    </div>
+    <div class="neibu1">
+      <img src="img/img_43.png" alt="" class="img9">
+      <div>上课方式</div>
+    </div>
+    <div class="neibu1">
+      <img src="img/img_44.png" alt="" class="img9">
+      <div>上课时间</div>
+    </div>
+  </div>
+<div class="top">
+  <div class="left1">
+  <div class="logo"></div>
+  <ul class="center1">
+    <li class="one"><a href="#">首页</a></li>
+    <li  class="li">
+      <a href="#">培训课程</a>
+      <ul class="ul">
+        <li><a href="#">鸿蒙开发</a></li>
+        <li><a href="#">网络安全</a></li>
+        <li><a href="#">AIGC应用</a></li>
+        <li><a href="#">AIGC数字营销</a></li>
+        <li><a href="#">python</a></li>
+        <li><a href="#">Java开发</a></li>
+      </ul>
+    </li>
+    <li  class="li">
+      <a href="#">认证考试</a>
+      <ul class="ul">
+        <li><a href="#">NISP</a></li>
+        <li><a href="#"> CISP-PTE</a></li>
+        <li><a href="#"> CISP-DSG</a></li>
+        <li><a href="#">互联网营销师</a></li>
+        <li><a href="#">AIGC应用</a></li>
+      </ul>
+    </li>
+    <li  class="li"><a href="#">免费课程</a></li>
+    <li  class="li"><a href="#">学习平台</a></li>
+    <li  class="jj"><a href="#">灵智汇</a></li>
+    <li  class="li"><a href="#">师资团队</a></li>
+    <li  class="li"><a href="#">学员成果</a></li>
+    <li  class="li">
+      <a href="#">关于我们</a>
+      <ul class="ul">
+        <li><a href="#">新闻动态</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">热点话题</a></li>
+      </ul>
+    </li>
+  </ul>
+  <img src="img/slogan.png" alt="" class="tu">
+  <img src="img/tels.png" alt="" class="p">
+  </div>
+</div>
+<div class="body">
+  <div class="tou"></div>
+  <div class="n">
+    <div class="left1">
+    <h1 class="hq">专业介绍</h1>
+    <div class="float"></div>
+    <p class="pp">
+      Java是一门面向对象的编程语言，不仅吸收了C++语言的各种优点，还摒弃了
+      C++里难以理解的多继承、指针等概念，因此，Java语言具有功能强大和简单易用
+      两个特征。ava语言作为静态面向对象编程语言的代表，极好地实现了面向对象理
+      论，允许程序员以优雅的思维方式进行复杂的编程。[1]Java具有简单性、面向对
+      象、分布式、健壮性、安全性、平台独立与可移植性、多线、动态性等特点。
+      [2]Java可以编写桌面应用程序、Web应用程序、分布式系统和嵌)式系统应用程
+      序等。
+    </p>
+    </div>
+  </div>
+  <div class="jd">
+    <div class="left1">
+    <img src="img/img.png" alt="" class="img">
+    <h1 class="hw">课程大纲</h1>
+    <div class="se">第一阶段 JavaSE</div>
+    <img src="img/img_1.png" alt="" class="img1">
+    <img src="img/img_2.png" alt="" class="img2">
+    <p class="p1">Java基础语法、面向对象基础、 常用API、集合框架、线程（池）、代理反射、 网络编程</p>
+    <div class="se">第二阶段 JavaWeb</div>
+    <img src="img/img_1.png" alt="" class="img1">
+    <img src="img/img_2.png" alt="" class="img2">
+    <p class="p1">html、Css、javaScript、Jquery、JavaWeb、session（cookie）、 filter、上传和下载组件、JSP、 Tomcat服务器、 Druid连接池</p>
+    <div class="se">第三阶段 企业级框架</div>
+    <img src="img/img_1.png" alt="" class="img1">
+    <img src="img/img_2.png" alt="" class="img2">
+    <p class="p1">Spring、 SpringMVC、 SpringBoot、 MyBatis(MyBatis-plus)、 Maven管理、 Git、Tomcat集成、数据库分库分表</p>
+    <div class="se">第四阶段 互联网前沿技术</div>
+    <img src="img/img_1.png" alt="" class="img1">
+    <img src="img/img_2.png" alt="" class="img2">
+    <p class="p1">Dubbo分布式框架、 SpringCloud微服务、 RocketMQ消息中间件、 Redis缓存中间件、 ES查询中间件、Vue前端框架、OSS对象存储中间件</p>
+    <div class="se">第五阶段 商业项目阶段</div>
+    <img src="img/img_1.png" alt="" class="img1">
+    <img src="img/img_2.png" alt="" class="img2">
+    <p class="p1">从mysql数据库->javase->javaweb->企业级框架->微服务框架->互联网新技术的面试拉练， 15000多道面试题的练习，N次模拟面试，以及每次面试的调优复盘，同时还可参与公司 的商业外包项目的开发</p>
+    </div>
+  </div>
+  <div class="xy">
+    <div class="left1">
+    <img src="img/img_3.png" alt="" class="img">
+    <h1 class="he">学员评价</h1>
+    <div class="su">
+      <img src="img/img_4.png" alt="" class="img3">
+      <p class="fud">苏同学</p>
+      <p class="fud1">安***科技</p>
+      <div class="bai">
+        <table class="table">
+          <tr>
+            <td class="td1">报名时间</td>
+            <td class="td2">2024-08-22</td>
+          </tr>
+          <tr>
+            <td class="td1">为何报此课</td>
+            <td class="td2">兴趣使然</td>
+          </tr>
+          <tr>
+            <td class="td1">为何选知了堂</td>
+            <td class="td2">课程全面</td>
+          </tr>
+          <tr>
+            <td class="td1">你的期待</td>
+            <td class="td2">希望汇智知了堂越办越好，学弟学妹们一定要坚持</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="su">
+      <img src="img/img_5.png" alt="" class="img3">
+      <p class="fud">秦同学</p>
+      <p class="fud1">天***科技</p>
+      <div class="bai">
+        <table class="table">
+          <tr>
+            <td class="td1">报名时间</td>
+            <td class="td2">2024-09-16</td>
+          </tr>
+          <tr>
+            <td class="td1">为何报此课</td>
+            <td class="td2">转行</td>
+          </tr>
+          <tr>
+            <td class="td1">为何选知了堂</td>
+            <td class="td2">信任</td>
+          </tr>
+          <tr>
+            <td class="td1">你的期待</td>
+            <td class="td2">努力加油！</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="xiaoyuan">
+    <div class="left1">
+    <img src="img/img.png" alt="" class="img">
+    <h1 class="hw">校园生活</h1>
+    <table class="table1">
+      <tr>
+        <td class="yc">精彩活动</td>
+        <td class="yc1">老学员分享</td>
+      </tr>
+      <tr>
+        <td><hr class="br"></td>
+        <td><hr></td>
+      </tr>
+    </table>
+    <div class="over">
+      <div class="left">
+      <img src="img/img_14.png" alt="" class="xiao">
+        <span>成都纺专工作室赋能</span>
+    </div>
+    <div class="left">
+      <img src="img/img_6.png" alt="" class="xiao">
+      <span>成都理工鸿蒙相关讲座</span>
+  </div>
+<div class="left">
+  <img src="img/img_7.png" alt="" class="xiao">
+      <span>纺专电商工作室实操课</span>
+</div>
+<div class="left">
+  <img src="img/img_8.png" alt="" class="xiao">
+      <span>纺专学生商贸城研学</span>
+</div>
+<div class="left">
+  <img src="img/img_9.png" alt="" class="xiao">
+      <span>工商职院项目推荐</span>
+</div>
+<div class="left">
+  <img src="img/img_15.png" alt="" class="xiao">
+      <span>奇安信集团领导到访</span>
+</div>
+<div class="left">
+  <img src="img/img_10.png" alt="" class="xiao">
+      <span>西昌学院参访公司</span>
+</div>
+<div class="left">
+  <img src="img/img_11.png" alt="" class="xiao">
+      <span>知友会线下服务～宜宾</span>
+</div>
+<div class="left">
+   <img src="img/img_12.png" alt="" class="xiao">
+      <span>西科大信安校园趣味赛</span>
+</div>
+<div class="left">
+  <img src="img/img_13.png" alt="" class="xiao">
+    <span>西石油商贸城研学</span>
+</div>
+    </div>
+    <div class="over1">
+      <div class="left">
+        <img src="img/img_16.png" alt="" class="xiao">
+          <span>知友会</span>
+      </div>
+      <div class="left">
+        <img src="img/img_17.png" alt="" class="xiao">
+          <span>企业导师分享案例</span>
+      </div>
+      <div class="left">
+        <img src="img/img_18.png" alt="" class="xiao">
+          <span>工作室学生分享</span>
+      </div>
+      <div class="left">
+        <img src="img/img_19.png" alt="" class="xiao">
+          <span>网安老学员分享</span>
+      </div>
+      <div class="left">
+        <img src="img/img_20.png" alt="" class="xiao">
+          <span>老学员领取证书</span>
+      </div>
+      <div class="left">
+        <img src="img/img_21.png" alt="" class="xiao">
+          <span>学员合照</span>
+      </div>
+      <div class="left">
+        <img src="img/img_22.png" alt="" class="xiao">
+          <span>老学员合照</span>
+      </div>
+      <div class="left">
+        <img src="img/img_23.png" alt="" class="xiao">
+          <span>老学员合照</span>
+      </div>
+      <div class="left">
+        <img src="img/img_24.png" alt="" class="xiao">
+          <span>合照</span>
+      </div>
+      <div class="left">
+        <img src="img/img_25.png" alt="" class="xiao">
+          <span>合照</span>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="jishuganhuo">
+    <div class="left1">
+    <img src="img/img.png" alt="" class="img">
+    <h1 class="hw">技术干货</h1>
+    <div class="center">
+    <div class="zuo">
+      <span class="span">Java开发热点话题</span>
+      <span class="span1">更多</span>
+      <img src="img/img_26.png" alt="" class="img0">
+      <ul>
+        <li class="li1"><a href="#">鸿蒙开发：Java工程师的第二春!</a></li>
+        <li class="li1"><a href="#">java开发转鸿蒙有前途吗？</a></li>
+        <li class="li1"><a href="#">java培训班学费一般多少？</a></li>
+        <li class="li1"><a href="#">java在人工智能时代的崛起</a></li>
+      </ul>
+    </div>
+    <div class="zhong">
+      <span class="span">Java开发常见问题</span>
+      <span class="span1">更多</span>
+      <img src="img/img_27.png" alt="" class="img0">
+      <ul>
+        <li class="li1"><a href="#">不会java可以开发鸿蒙吗？</a></li>
+        <li class="li1"><a href="#">成都java培训多少钱?</a></li>
+        <li class="li1"><a href="#">java培训学费大概多少?</a></li>
+        <li class="li1"><a href="#">java转鸿蒙好转吗？</a></li>
+        <li class="li1"><a href="#">java转鸿蒙开发可行吗？</a></li>
+        <li class="li1"><a href="#">java线上培训班哪个机构好？</a></li>
+      </ul>
+    </div>
+    <div class="you">
+      <span class="span">Java开发技术干货</span>
+      <span class="span1">更多</span>
+      <img src="img/img_28.png" alt="" class="img0">
+      <ul>
+        <li class="li1"><a href="#">鸿蒙开发：前端与Java程序员的下一个黄金赛</a></li>
+        <li class="li1"><a href="#">做java和做前端,后期转鸿蒙哪个更好转？</a></li>
+        <li class="li1"><a href="#">掌握Java全栈开发面试题，轻松迈向职场新高度</a></li>
+      </ul>
+    </div>
+    </div>
+      </div>
+  </div>
+  <div class="news">
+    <div class="left1">
+    <img src="img/img.png" alt="" class="img">
+    <h1 class="hw">新闻头条</h1>
+      <div><a href="#"><img src="img/img_29.png" alt="" class="img4"><span class="span2">AI+鸿蒙，开启智能生活新篇章！...</span></a></div>
+    <div class="hm">
+      <a href="#"><img src="img/img_30.png" alt="" class="img5"><span class="span3"><span class="span4">1</span>知了汇智与西南科技大学计算</span></a>
+      <a href="#"><img src="img/img_31.png" alt="" class="img5"><span class="span3"><span class="span4">2</span>第七名！知了汇智学员在四川</span></a>
+      <a href="#"><img src="img/img_32.png" alt="" class="img5"><span class="span3"><span class="span4">3</span>鸿蒙免费试学持续招募中</span></a>
+      <a href="#"><img src="img/img_33.png" alt="" class="img5"><span class="span3"><span class="span4">4</span>传统开发已饱和?鸿蒙开发：前</span></a>
+    </div>
+    <span class="span5">新闻资讯<span class="span6">查看更多></span></span>
+    </div>
+  </div>
+  <div class="remen">
+    <div class="left1">
+    <img src="img/img_3.png" alt="" class="img">
+    <h1 class="he">热门专业推荐</h1>
+    <table class="table2">
+      <tr>
+        <td class="td3">
+          <img src="img/img_34.png" alt="" class="img6">
+          <span class="span7">网络安全</span>
+        </td>
+        <td class="td3">
+          <img src="img/img_35.png" alt="" class="img6">
+          <span class="span7">人工智能</span>
+        </td>
+        <td class="td3">
+          <img src="img/img_36.png" alt="" class="img6">
+          <span class="span7">java开发</span>
+        </td>
+        <td class="td3">
+          <img src="img/img_37.png" alt="" class="img6">
+          <span class="span7">鸿蒙开发</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="td3">
+          <img src="img/img_38.png" alt="" class="img6">
+          <span class="span7">AI应用开发</span>
+        </td>
+      </tr>
+    </table>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="left1">
+    <img src="img/img_39.png" alt="" class="img7">
+    <table class="table3">
+      <tr>
+        <td class="td4">培训课程</td>
+        <td class="td4">联系我们</td>
+        <td class="td4">汇智知了堂动态</td>
+      </tr>
+      <tr>
+        <td class="dj">成都鸿蒙开发</td>
+        <td>公司地址：成都市锦江区白鹭湾科技生态园(科创一中心)3栋2单元2层&nbsp;&nbsp;</td>
+        <td class="dj">常见问题</td>
+      </tr>
+      <tr>
+        <td class="dj">成都网络安全</td>
+        <td>联系号码：17713623990</td>
+        <td class="dj">技术干货</td>
+      </tr>
+      <tr>
+        <td class="dj">成都AIGC应用</td>
+        <td>QQ：1105657241</td>
+        <td class="dj">公司动态</td>
+      </tr>
+      <tr>
+        <td class="dj">成都互联网营销师</td>
+        <td></td>
+        <td class="dj">热点话题</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="dj">新闻列表</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="dj">新闻动态</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="dj">TAG</td>
+      </tr>
+    </table>
+    <p class="p2">&COPY;成都知了汇智科技有限公司  版权所有  ( 蜀ICP备2020030729号 ) ( 川公网安备 51019002003290号 )</p>
+    <p class="p3">注：本站部分内容以及图片来源于网络转载，如网站发布的有关的信息侵犯到您的权益，请及时与我们取得联系删除</p>
+    </div>
+  </div>
+</div>
+<script>
+  const o=document.querySelector('.over');
+  const a=document.querySelector('.yc1');
+  const oo=document.querySelector('.over1')
+  const  aa=document.querySelector('.yc')
+  a.onmouseover=function(){
+    o.style.display="none";
+    oo.style.display="block";
+    aa.style.color="black";
+    a.style.color="dodgerblue";
+  }
+  aa.onmouseover=function(){
+    oo.style.display="none";
+    o.style.display="block";
+    a.style.color="black";
+    aa.style.color="dodgerblue";
+  }
+</script>
+</body>
+</html>
